@@ -1,0 +1,38 @@
+import random
+bombos = [["Rusia", "Alemania", "Brasil", "Portugal",     "Argentina", "Belgica", "Polonia", "Francia"], ["España", "Perú", "Suiza", "Inglaterra", "Colombia", "Mexico", "Uruguay", "Croacia"], ["Dinamarca", "Islandia", "Costa rica", "Suecia", "Tunez", "Egipto", "Senegal", "Iran"], ["Serbia", "Nigeria", "Australia", "Japón", "Marruecos", "Panama", "CoreadelSur", "Arabia Saudita"]]
+
+nuevogrupo = []
+
+def grupo_n():
+  M = []
+  for i in bombos:
+    n = random.randint(0, len(i)-1)
+    M.append(i[n])
+    i.pop(n)
+  return M
+
+grupoA = []
+grupoA.append(grupo_n())
+grupoB = []
+grupoB.append(grupo_n())
+grupoC = []
+grupoC.append(grupo_n())
+grupoD = []
+grupoD.append(grupo_n())
+grupoE = []
+grupoE.append(grupo_n())
+grupoF = []
+grupoF.append(grupo_n())
+grupoG = []
+grupoG.append(grupo_n())
+grupoH = []
+grupoH.append(grupo_n())
+
+print(grupoA)
+print(grupoB)
+print(grupoC)
+print(grupoD)
+print(grupoE)
+print(grupoF)
+print(grupoG)
+print(grupoH)
